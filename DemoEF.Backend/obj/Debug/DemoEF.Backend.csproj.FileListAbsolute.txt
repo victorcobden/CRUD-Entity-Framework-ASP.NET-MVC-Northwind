@@ -1,0 +1,10 @@
+C:\Users\Victor\Documents\Proyectos\DemoEF\DemoEF.Backend\bin\Debug\DemoEF.Backend.dll.config
+C:\Users\Victor\Documents\Proyectos\DemoEF\DemoEF.Backend\bin\Debug\DemoEF.Backend.dll
+C:\Users\Victor\Documents\Proyectos\DemoEF\DemoEF.Backend\bin\Debug\DemoEF.Backend.pdb
+C:\Users\Victor\Documents\Proyectos\DemoEF\DemoEF.Backend\bin\Debug\EntityFramework.dll
+C:\Users\Victor\Documents\Proyectos\DemoEF\DemoEF.Backend\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Victor\Documents\Proyectos\DemoEF\DemoEF.Backend\bin\Debug\EntityFramework.xml
+C:\Users\Victor\Documents\Proyectos\DemoEF\DemoEF.Backend\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Victor\Documents\Proyectos\DemoEF\DemoEF.Backend\obj\Debug\DemoEF.Backend.csprojResolveAssemblyReference.cache
+C:\Users\Victor\Documents\Proyectos\DemoEF\DemoEF.Backend\obj\Debug\DemoEF.Backend.dll
+C:\Users\Victor\Documents\Proyectos\DemoEF\DemoEF.Backend\obj\Debug\DemoEF.Backend.pdb

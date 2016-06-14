@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Edit";
+}
+<div class="mdl-cell mdl-cell--12-col">
+    <h2 class="text-center">Editar</h2>
+</div>
+<div class="mdl-cell mdl-cell--12-col text-center">
+    @using (Html.BeginForm("Update", "Products", FormMethod.Post))
+    {
+        @Html.Partial("_Form")
+
+        <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect">
+            Actualizar
+        </button>
+    }
+</div>
+

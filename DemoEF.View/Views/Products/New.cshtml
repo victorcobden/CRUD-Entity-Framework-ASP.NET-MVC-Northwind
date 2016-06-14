@@ -1,0 +1,19 @@
+﻿@model DemoEF.Backend.Bussiness.BussinessEntities.Product
+@{
+    ViewBag.Title = "New";
+}
+
+<div class="mdl-cell mdl-cell--12-col">
+    <h2 class="text-center">Nuevo Producto</h2>
+</div>
+<div class="mdl-cell mdl-cell--12-col text-center">
+    @using (Html.BeginForm("Save","Products",FormMethod.Post))
+    {
+        @Html.Partial("_Form")
+        
+        <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect">
+            Registrar
+        </button>
+    }
+</div>
+

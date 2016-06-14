@@ -1,0 +1,26 @@
+﻿@model DemoEF.Backend.Bussiness.BussinessEntities.Product
+@{
+    ViewBag.Title = "Details";
+}
+<div class="mdl-cell mdl-cell--12-col">
+    <h2 class="text-center">Detalle</h2>
+</div>
+<div class="mdl-card mdl-shadow--2dp">
+    <div class="mdl-card__title">
+        @Model.ProductName
+    </div>
+    <div class="mdl-card__supporting-text">
+        <p>Precio Unitario: @Model.UnitPrice</p>
+        <p>Unidades en Stock: @Model.UnitsInStock</p>
+        <p>Unidades en orden: @Model.UnitsOnOrder</p>
+    </div>
+    <div class="mdl-card__actions">
+        <a href="@Url.Action("Edit","Products", new {id = Model.ProductID })" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+            Editar
+        </a>
+        <a href="@Url.Action("Delete","Products", new {id = Model.ProductID })" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+            Eliminar
+        </a>
+    </div>
+</div>
+

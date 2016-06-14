@@ -1,0 +1,54 @@
+﻿@model List<DemoEF.Backend.Bussiness.BussinessEntities.Product>
+@{
+    ViewBag.Title = "Index";
+}
+<div class="mdl-cell mdl-cell--12-col">
+    <h2 class="text-center">Lista de Productos</h2>
+</div>
+<div class="mdl-cell mdl-cell--12-col">
+    <a href="@Url.Action("New","Products")" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect">
+    Nuevo Producto</a>
+</div>
+<div>
+    <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th class="mdl-data-table__cell--non-numeric">Nombre</th>
+                <th>Precio Unitario</th>
+                <th>Stock</th>
+                <th>Unidades en Orden</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var p in Model)
+            {
+                <tr>
+                    <td>@p.ProductID</td>
+                    <td class="mdl-data-table__cell--non-numeric">@p.ProductName</td>
+                    <td>@p.UnitPrice</td>
+                    <td>@p.UnitsInStock</td>
+                    <td>@p.UnitsOnOrder</td>
+                    <td>
+                        <a href="@Url.Action("Details","Products", new {id = p.ProductID })" class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored">
+                            <i class="material-icons">pageview</i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="@Url.Action("Edit","Products", new {id = p.ProductID })" class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored">
+                            <i class="material-icons">edit</i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="@Url.Action("Delete","Products", new {id = p.ProductID })" class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored">
+                            <i class="material-icons">close</i>
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
